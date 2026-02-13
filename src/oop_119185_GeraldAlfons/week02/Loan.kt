@@ -9,7 +9,7 @@ class Loan(
         return if (loanDuration > 3) {
             (loanDuration - 3) * 2000 //
         } else {
-            0 // [cite: 109]
+            0
         }
     }
 }
