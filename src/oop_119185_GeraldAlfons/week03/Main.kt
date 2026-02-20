@@ -21,6 +21,24 @@ fun main() {
 
     // 3. Test Tier
     println("Tier Senjata: ${sword.tier}")
+
+    fun main() {
+        // ... kode sebelumnya ...
+
+        println("\n--- Test Tugas 2: Player ---")
+        val player1 = Player("ProGamer99")
+
+        // 1. Coba akses XP langsung (Ini akan error jika di-uncomment)
+        // player1.xp = 500 // Error: Cannot access 'xp': it is private in 'Player'
+
+        // 2. Tambah XP (masih level 1)
+        player1.addXp(50)
+        println("Level saat ini: ${player1.level}")
+
+        // 3. Tambah XP lagi sehingga naik ke level 2
+        player1.addXp(60) // Total XP 110, harusnya Level Up
+        println("Level saat ini: ${player1.level}")
+    }
 }
-}
+
 
