@@ -28,5 +28,18 @@ fun Main () {
     println("Luas Persegi: ${math.hitungLuas(5)}")
     println("Luas Persegi Panjang: ${math.hitungLuas(10, 5)}")
     println("Luas Lingkaran: ${math.hitungLuas(7.0)}")
-}
+
+    // 1. Inisialisasi objek
+    val eWallet = EWallet("Gopay Gege", 50000.0)
+    val creditCard = CreditCard("Visa Platinum", 100000.0)
+
+    // 2. Masukkan ke dalam list bertipe Parent (PaymentMethod)
+    val listPayment: List<PaymentMethod> = listOf(eWallet, creditCard)
+
+    println("\n--- CHECKPOINT 10: POLYMORPHISM ---")
+    for (payment in listPayment) {
+        // Memanggil fungsi yang di-override (Runtime Polymorphism)
+        payment.processPayment(75000.0)
+    }
+
 }
