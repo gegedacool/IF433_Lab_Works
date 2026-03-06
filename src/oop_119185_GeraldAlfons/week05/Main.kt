@@ -42,4 +42,19 @@ fun Main () {
         payment.processPayment(75000.0)
     }
 
+    println("\n--- CHECKPOINT 11: SMART CASTING ---")
+    for (payment in listPayment) {
+        payment.processPayment(75000.0)
+
+        if (payment is EWallet) {
+            println("=> Deteksi EWallet: Saldo tidak cukup, otomatis top up...")
+
+            // Smart cast otomatis
+            payment.topUp(50000.0)
+
+            // Coba bayar lagi setelah saldo ditambah
+            payment.processPayment(75000.0)
+        }
+    }
+
 }
