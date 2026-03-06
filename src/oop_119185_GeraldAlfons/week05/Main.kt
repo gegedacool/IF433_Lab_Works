@@ -1,6 +1,7 @@
 package oop_119185_GeraldAlfons.week05
 
 fun Main () {
+    val math = MathHelper()
     val dosen1 = Dosen(nama =  "Pak Alex", nidn ="0123456")
     val admin1  = Admin (nama = "Bu Siti")
     // Polymorphic Collection : list yang berisi tipe Parent, tapi isinya objek Anak
@@ -20,5 +21,12 @@ fun Main () {
             }
         }
         println ("-------------------------------")
+
+
     }
+    println("--- HASIL TUGAS MANDIRI 1 ---")
+    println("Luas Persegi: ${math.hitungLuas(5)}")
+    println("Luas Persegi Panjang: ${math.hitungLuas(10, 5)}")
+    println("Luas Lingkaran: ${math.hitungLuas(7.0)}")
+}
 }
