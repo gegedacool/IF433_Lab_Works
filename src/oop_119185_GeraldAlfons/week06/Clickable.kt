@@ -1,4 +1,6 @@
 package oop_119185_GeraldAlfons.week06
 
-class Clickable {
+interface Clickable {
+    val name : String
+    fun click()
 }
