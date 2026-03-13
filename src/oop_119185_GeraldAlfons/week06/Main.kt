@@ -1,4 +1,24 @@
 package oop_119185_GeraldAlfons.week06
 
-class Main {
+import oop_119185_GeraldAlfons.week05.PaymentMethod
+
+fun processCheckout (method: PaymentMethod, amount: Double) {
+    println("-> Memulai Checkout:...")
+    method.pay(amount) //
+
+
+fun main () {
+    val myWatch = Smartwatch()
+    myWatch.showTime()
+
+    val myPhone = Smartphone()
+    myPhone.turnOn()
+
+    val pay1 = Gopay()
+    val pay2 = CreditCard()
+
+    println("\n=== TESTING CHECKOUT ===")
+    processCheckout(method = pay1, amount = 50000.0)
+    processCheckout(method = pay2, amount =150000.0)
+}
 }
