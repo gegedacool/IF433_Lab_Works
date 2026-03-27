@@ -1,4 +1,22 @@
 package oop_119185_GeraldAlfons.Week07
 
-class Main {
+fun main {
+    println("=== TEST SINGLETON ===")
+    println("Status: ${DatabaseManager.connectionStatus}")
+    DatabaseManager.connection()
+
+    println("\n=== TEST COMPANION OBJECT ===")
+    val reg1 = RegularUser("Alice", 22)
+    val reg2 = RegularUser("Alice", 23)
+    println(reg1)
+    println ("Sama? $s{reg1 == reg2}")
+    val client = NetworkClient.createClient()
+    client.connect()
+
+    println("\n=== TEST DATA CLASS ===")
+    val data1 = DataUser("Alice", 22)
+    val data2 = DataUser ("Alice", 22)
+    println(data1)
+    println("Sama? ${data1 == data2}")
 }
+
