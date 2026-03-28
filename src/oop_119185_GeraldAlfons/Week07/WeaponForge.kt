@@ -1,4 +1,16 @@
 package oop_119185_GeraldAlfons.Week07
 
-class WeaponForge {
+class Weapon private constructor(val item: GameItem, val durability: Int) {
+
+    companion object {
+        fun forgeStarterSword(): Weapon {
+            val starterItem = GameItem("Pedang Kayu Bapuk", 5, ItemRarity.COMMON)
+            return Weapon(starterItem, 50)
+        }
+
+        fun forgeEpicSword(): Weapon {
+            val epicItem = GameItem("Excalibur KW", 99, ItemRarity.EPIC)
+            return Weapon(epicItem, 100)
+        }
+    }
 }

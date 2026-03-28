@@ -33,6 +33,10 @@ fun main {
         is ApiResponse.Success -> "Tampilkan : ${response.data}"
         is ApiResponse.Error -> "Tampilkan : ${response.messsage}"
         ApiResponse.Loading -> "Tampilkan Spinner"
+
+        println("\n=== TUGAS MANDIRI: RPG SIMULATION ===")
+                GameManager.startGame()
+                GameManager.startGame()
     }
 }
 
