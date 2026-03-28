@@ -42,6 +42,15 @@ fun main {
 
             val playerWeapon = Weapon.forgeStarterSword()
         println("Senjata Awal: ${playerWeapon.item.name} (Rarity: ${playerWeapon.item.rarity})")
+
+            val upgradedItem = playerWeapon.item.copy(name = "Pedang Kayu Berpaku", damage = 25)
+
+        // Simulasi alur game
+        processEvent(SafeZone)
+                processEvent(MonsterEncounter("Goblin Nakal"))
+                processEvent(LootDropped(upgradedItem))
+                processEvent(GameOver("Terkena jebakan racun"))
+
     }
 }
 
