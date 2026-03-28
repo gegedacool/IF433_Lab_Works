@@ -37,6 +37,11 @@ fun main {
         println("\n=== TUGAS MANDIRI: RPG SIMULATION ===")
                 GameManager.startGame()
                 GameManager.startGame()
+
+                println("Drop Chance Legendary: ${ItemRarity.LEGENDARY.dropChance}%")
+
+            val playerWeapon = Weapon.forgeStarterSword()
+        println("Senjata Awal: ${playerWeapon.item.name} (Rarity: ${playerWeapon.item.rarity})")
     }
 }
 
