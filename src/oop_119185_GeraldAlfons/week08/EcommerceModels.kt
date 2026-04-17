@@ -1,4 +1,5 @@
 package oop_119185_GeraldAlfons.week08
 
-class EcommerceModels {
-}
+sealed class Product
+data class Electronic(val id: String, val name: String, val warrantyMonths: Int) : Product()
+data class Clothing(val id: String, val name: String, val size: String) : Product()

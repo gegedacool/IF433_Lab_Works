@@ -1,4 +1,7 @@
 package oop_119185_GeraldAlfons.week08
 
-class JavaPaymentService {
+public class JavaPaymentService {
+    public static String processPayment(String productId) {
+        return "TRX-" + productId + "-SUCCESS";
+    }
 }
