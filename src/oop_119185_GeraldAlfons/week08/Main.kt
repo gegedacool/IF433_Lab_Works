@@ -21,6 +21,12 @@ fun Main {
         UserProfile("Andi", null),
         "laptop",
         4500000.0
-
     )
+
+    for (item in mixedData) {
+        val text = item as? String
+        text?.let {
+            println("Ditemukan teks : ${it.uppercase()}")
+        }
+    }
 }
