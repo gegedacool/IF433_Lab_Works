@@ -14,5 +14,10 @@ fun main() {
         length * 2
     }
     println("Hasil kalkulasi run: $result")
-}
+
+    println("=== TEST APPLY ===")
+    val user = User().apply {
+        name = "Alex"
+        age = 25
+    }
 }
