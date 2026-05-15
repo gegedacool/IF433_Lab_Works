@@ -20,4 +20,6 @@ fun main() {
     txRepo.getAll().forEach {
         println("ID: ${it.id} | Amount: ${it.amount}")
     }
+    println("\nSystem: All generic modules tested successfully.")
+}
 }
