@@ -44,4 +44,5 @@ fun main() {
             println("Peringatan ke Pemilik: ${error.message}")
             println("(Bonus: Berikan chicken jerky secara manual)")
         }
+    println("\nSystem: Full robust smart feeder pipeline test completed.")
 }
