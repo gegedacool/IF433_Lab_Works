@@ -48,3 +48,9 @@ fun main() {
     // CHECKPOINT 19
     val loadedData = loadTrades("crypto_trades.csv")
     val totalPnl = loadedData.sumOf { it.pnl }
+    // CHECKPOINT 20
+    println("\n=== LOG VALID TRADES ===")
+    loadedData.forEach { println(it) }
+    println("==== TOTAL PnL BERSIH: $totalPnl ====")
+}
+
