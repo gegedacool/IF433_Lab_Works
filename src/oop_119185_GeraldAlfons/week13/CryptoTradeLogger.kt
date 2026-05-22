@@ -45,3 +45,6 @@ fun main() {
     saveTrades(trades, "crypto_trades.csv")
     //18
     File("crypto_trades.csv").appendText("CORRUPT_ID, DOGEUSDT, Hold, XX ,YY\n")
+    // CHECKPOINT 19
+    val loadedData = loadTrades("crypto_trades.csv")
+    val totalPnl = loadedData.sumOf { it.pnl }
